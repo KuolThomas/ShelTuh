@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Childcare Registration</title>
+</head>
+<body>
+  <h1>Welcome to Our Childcare Center</h1>
+  <p>We offer high-quality care for children aged 6 weeks to 5 years old.</p>
+  <h2>Categories</h2>
+  <ul>
+    <li>Babies (6 weeks to 9 months)</li>
+    <li>Wobblers (9 months to 18 months)</li>
+    <li>Toddlers (18 months to 3 years)</li>
+    <li>Preschool (3 years to 5 years)</li>
+  </ul>
+  <h2>Registration Form</h2>
+  <form method="post" action="process_form.php">
+    <label for="child_name">Child's Name:</label>
+    <input type="text" name="child_name" id="child_name">
+    <br><br>
+    <label for="category">Category:</label>
+    <select name="category" id="category">
+      <option value="babies">Babies</option>
+      <option value="wobblers">Wobblers</option>
+      <option value="toddlers">Toddlers</option>
+      <option value="preschool">Preschool</option>
+    </select>
+    <br><br>
+    <label for="care_type">Care Type:</label>
+    <select name="care_type" id="care_type">
+      <optgroup label="Babies">
+        <option value="half_day">Half Day</option>
+        <option value="full_day">Full Day</option>
+      </optgroup>
+      <optgroup label="Wobblers">
+        <option value="half_day">Half Day</option>
+        <option value="full_day">Full Day</option>
+        <option value="one_day">1 Day</option>
+        <option value="three_days">3 Days</option>
+        <option value="five_days">5 Days</option>
+      </optgroup>
+      <optgroup label="Toddlers">
+        <option value="half_day">Half Day</option>
+        <option value="full_day">Full Day</option>
+        <option value="one_day">1 Day</option>
+        <option value="three_days">3 Days</option>
+        <option value="five_days">5 Days</option>
+      </optgroup>
+      <optgroup label="Preschool">
+        <option value="half_day">Half Day</option>
+        <option value="full_day">Full Day</option>
+        <option value="one_day">1 Day</option>
+        <option value="three_days">3 Days</option>
+        <option value="five_days">5 Days</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username">
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+    <input type="submit" name="submit" value="Register">
+  </form>
+</body>
+</html>
